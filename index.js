@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Standardort für Veranstaltungen, wenn kein spezifischer Ort angegeben ist
     const DEFAULT_LOCATION = "Saulgauer Straße 3, 89079 Ulm-Wiblingen";
     
+    // Deutsche Wochentage (2-Buchstaben-Kürzel)
+    const WEEKDAYS_DE = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+    
     // Modal Elemente
     const impressumLink = document.getElementById('impressum-link');
     const datenschutzLink = document.getElementById('datenschutz-link');
@@ -80,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const [year, month, day] = termin.datum.split('-').map(Number);
                 const dateObj = new Date(year, month - 1, day);
+                
+                // Wochentag ermitteln und in deutsches 2-Buchstaben-Kürzel umwandeln
+                const weekday = WEEKDAYS_DE[dateObj.getDay()];
+                
                 const formattedDate = dateObj.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' });
                 const timeString = termin.uhrzeit ? `${termin.uhrzeit} Uhr` : '';
                 
@@ -88,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 entryDiv.innerHTML = `
                     <div class="calendar-date-time">
+                         <span class="weekday">${weekday}</span>
                          <span class="date">${formattedDate}</span>
                          <span class="time">${timeString}</span>
                     </div>
