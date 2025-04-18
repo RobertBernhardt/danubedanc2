@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.site-header'); // Header Element holen
     const sectionsToFade = document.querySelectorAll('.fade-in');
     const scrollThreshold = 100; // Pixel-Schwellenwert, wann Header erscheinen soll
+    
+    // Standardort für Veranstaltungen, wenn kein spezifischer Ort angegeben ist
+    const DEFAULT_LOCATION = "Saulgauer Straße 3, 89079 Ulm-Wiblingen";
+    
+    // Modal Elemente
+    const impressumLink = document.getElementById('impressum-link');
+    const datenschutzLink = document.getElementById('datenschutz-link');
+    const impressumModal = document.getElementById('impressum-modal');
+    const datenschutzModal = document.getElementById('datenschutz-modal');
+    const closeButtons = document.querySelectorAll('.close-modal');
+    const modals = document.querySelectorAll('.modal');
 
     // --- Funktionen ---
 
@@ -71,6 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const dateObj = new Date(year, month - 1, day);
                 const formattedDate = dateObj.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' });
                 const timeString = termin.uhrzeit ? `${termin.uhrzeit} Uhr` : '';
+                
+                // Verwende den Standardort, wenn kein spezifischer Ort angegeben ist oder der Ort leer ist
+                const location = termin.ort && termin.ort.trim() !== '' ? termin.ort : DEFAULT_LOCATION;
 
                 entryDiv.innerHTML = `
                     <div class="calendar-date-time">
@@ -80,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="calendar-details">
                         <h4>${termin.typ || 'Termin'} ${termin.level ? `(${termin.level})` : ''}</h4>
                         ${termin.caller ? `<span><span class="label">Caller/Cuer:</span> ${termin.caller}</span>` : ''}
-                        ${termin.ort ? `<span><span class="label">Ort:</span> ${termin.ort}</span>` : ''}
+                        <span><span class="label">Ort:</span> ${location}</span>
                         ${termin.extras ? `<span class="extras"><span class="label">Info:</span> ${termin.extras}</span>` : ''}
                     </div>
                 `;
@@ -124,6 +138,36 @@ document.addEventListener('DOMContentLoaded', function() {
             // else section.classList.remove('visible'); // Optional: Reset
         });
     }
+    
+    // Funktion zum Öffnen eines Modals
+    function openModal(modal) {
+        if (!modal) return;
+        
+        // Body Scrolling deaktivieren
+        document.body.style.overflow = 'hidden';
+        
+        // Modal anzeigen mit Animation
+        modal.style.display = 'block';
+        // Kurz warten und dann die Show-Klasse hinzufügen für Animation
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+    }
+    
+    // Funktion zum Schließen aller Modals
+    function closeAllModals() {
+        modals.forEach(modal => {
+            modal.classList.remove('show');
+            
+            // Nach der Animation ausblenden
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        });
+        
+        // Body Scrolling wieder aktivieren
+        document.body.style.overflow = '';
+    }
 
     // --- Event Listener ---
 
@@ -137,6 +181,42 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         handleHeaderVisibility();
         checkFadeIn();
+    });
+    
+    // Modal Event Listeners
+    if (impressumLink) {
+        impressumLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(impressumModal);
+        });
+    }
+    
+    if (datenschutzLink) {
+        datenschutzLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(datenschutzModal);
+        });
+    }
+    
+    // Close Button für alle Modals
+    closeButtons.forEach(button => {
+        button.addEventListener('click', closeAllModals);
+    });
+    
+    // Modals schließen bei Klick außerhalb des Inhalts
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAllModals();
+            }
+        });
+    });
+    
+    // Escape-Taste schließt Modals
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeAllModals();
+        }
     });
 
     // --- Initialisierung ---

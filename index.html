@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    </head>
+</head>
 <body>
 
     <header class="site-header">
@@ -50,6 +50,56 @@
                     <h2>Willkommen bei den Danube Dancers!</h2>
                     <p>Wir sind ein fröhlicher und aktiver Square und Round Dance Club in Ulm. Unser Verein wurde im Januar 1990 gegründet. Seitdem tanzen wir regelmäßig Square- und Round-Dance, derzeit wöchentlich im Wechsel. Bei uns treffen sich nette Leute jeden Alters, um gemeinsam zu tanzen, zu lachen und eine gute Zeit zu haben.</p>
                     <p>Egal ob Anfänger oder erfahrener Tänzer, bei uns bist du herzlich willkommen. Schau doch einfach mal bei einem unserer Clubabende vorbei!</p>
+                    
+                    <!-- Added features section to enhance the about section -->
+                    <div class="features-grid">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                </svg>
+                            </div>
+                            <h3>Gemeinschaft</h3>
+                            <p>Tanzen verbindet - bei uns findest du Gleichgesinnte und Freundschaft.</p>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <h3>Regelmäßige Termine</h3>
+                            <p>Wöchentliche Clubabende und spezielle Events sorgen für ein abwechslungsreiches Programm.</p>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3>Für alle Levels</h3>
+                            <p>Von Anfängern bis zu erfahrenen Tänzern - bei uns findet jeder seinen Platz.</p>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
+                            </div>
+                            <h3>Seit 1990</h3>
+                            <p>Über 30 Jahre Tanzerfahrung und eine lebendige Clubgeschichte.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -57,11 +107,11 @@
                 <div class="container">
                     <h2>Unsere Tanzarten</h2>
                     <div class="dance-styles-container">
-                        <div class="dance-style-card">
+                        <div class="dance-style-card square-dance">
                             <h3>Square Dance</h3>
                             <p>Der Caller gibt die Figuren vor, acht Tänzer in einem Square führen sie aus. Ein dynamisches Zusammenspiel, das Koordination und Aufmerksamkeit erfordert – und riesigen Spaß macht!</p>
                         </div>
-                        <div class="dance-style-card">
+                        <div class="dance-style-card round-dance">
                              <h3>Round Dance</h3>
                             <p>Paartanz nach Ansage (Cuer). Choreographien aus Standard- und Lateintänzen werden zu bekannter Musik getanzt. Elegant und abwechslungsreich.</p>
                         </div>
@@ -105,8 +155,6 @@
                         <div class="contact-map">
                            <p><em>Hier findest du uns:</em></p>
                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.589418971979!2d9.981739!3d48.35862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b00bc9f1a50c5%3A0x7c5ef3a5932de5b7!2sSaulgauer%20Str.%203%2C%2089079%20Ulm!5e0!3m2!1sde!2sde!4v1713432500000!5m2!1sde!2sde" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karte von Saulgauer Straße 3, Ulm-Wiblingen"></iframe>
-                           <p style="font-size: 0.8em; text-align: right; margin-top: 0.5rem;">Bitte den <a href="https://www.google.com/maps/place/Saulgauer+Str.+3,+89079+Ulm/@48.35862,9.981739,15z/data=!4m6!3m5!1s0x479b00bc9f1a50c5:0x7c5ef3a5932de5b7!8m2!3d48.35862!4d9.981739!16s%2Fg%2F11csm7z06t?entry=ttu" target="_blank" rel="noopener noreferrer">exakten Embed-Code auf Google Maps generieren</a> und ersetzen.</p>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -114,10 +162,59 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>© <span id="current-year"></span> Danube Dancers Ulm e.V. | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
-             <p style="opacity: 0.7;">Cover Image created by AI.</p>
+            <p>© <span id="current-year"></span> Danube Dancers Ulm e.V. | 
+               <a href="#" id="impressum-link">Impressum</a> | 
+               <a href="#" id="datenschutz-link">Datenschutz</a>
+            </p>
         </div>
     </footer>
+
+    <!-- Modal für Impressum -->
+    <div id="impressum-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Impressum</h2>
+            <div class="modal-body">
+                <p>Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.</p>
+                <p>Amtsgericht Memmingen VR 20660</p>
+                <p>Neu-Ulm</p>
+                <p>1. Vorstand: Annett Bernhardt</p>
+                <p>2. Vorstand: Karin Hanekamp</p>
+                <p>Kontakt: <a href="mailto:info@danube-dancers.de">info@danube-dancers.de</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal für Datenschutz -->
+    <div id="datenschutz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Datenschutzerklärung</h2>
+            <div class="modal-body">
+                <p>Die Betreiber dieser Seiten (Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.) nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung unserer Website ist ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben und verarbeitet werden, erfolgt dies auf der Rechtsgrundlage: erforderlich zur Vertragserfüllung gem. Art. 6 Abs. 1 b) DSGVO aufgrund einer Einwilligung gem. Art. 6 Abs. 1 a) DSGVO zur Wahrung berechtigter Interessen gem. Art. 6 Abs. 1 f) DSGVO im Rahmen der Erfüllung des Satzungszwecks und der Mitgliederpflege. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Darüber hinaus ist eine Erhebung, Verarbeitung oder Nutzung der hier veröffentlichten, personenbezogenen Daten durch Dritte, insbesondere für Zwecke des Adresshandels oder der Werbung, ohne ausdrückliche, schriftliche Einwilligung des Betroffenen nicht zulässig. Sollten im Rahmen der Auftragsdatenverarbeitung Daten an Dienstleister weitergegeben werden, so sind diese an die gesetzlichen Bestimmungen des Datenschutzes (DS-GVO und BDSG-neu) gebunden. Erhebungen beziehungsweise Übermittlungen persönlicher Daten an staatliche Einrichtungen und Behörden erfolgen nur im Rahmen zwingender Rechtsvorschriften. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+                
+                <h3>Cookies</h3>
+                <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
+                
+                <h3>Kontakt</h3>
+                <p>Wenn Sie uns per Email Anfragen zukommen lassen, werden Ihre Angaben aus der Email inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+                
+                <h3>Email-Adressen</h3>
+                <p>Email-Verkehr mit uns über diese Website wird aus Gründen der Geschäftstätigkeit gespeichert (Art. 6 Abs. 1 b) und f) DSGVO). Eine Löschung erfolgt nach Ablauf der gesetzlichen Aufbewahrungsfristen.</p>
+                
+                <h3>Recht auf Auskunft, Löschung, Sperrung</h3>
+                <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+                
+                <h3>Webseiten-Statistik</h3>
+                <p>In Verbindung mit dem Zugriff auf unsere Seiten werden serverseitig Daten (zum Beispiel IP-Adresse, Datum, Uhrzeit und betrachtete Seiten) gespeichert. Es findet keine personenbezogene Verwertung statt. Die statistische Auswertung anonymisierter Datensätze bleibt vorbehalten.</p>
+                
+                <h3>Copyright</h3>
+                <p>Alle Objekte dieser Webseiten sind urheberrechtlich geschützt. Jegliche Vervielfältigung, auch auszugsweise, bedarf einer Einwilligung des Webseitenbetreibers.</p>
+                
+                <p><em>(Stand: 28.05.2024)</em></p>
+            </div>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>

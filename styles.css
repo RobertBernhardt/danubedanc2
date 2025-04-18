@@ -11,6 +11,11 @@
     --font-family: 'Poppins', sans-serif;
     --transition-speed: 0.4s; /* Etwas langsamer für den Header-Effekt */
     --header-height: 70px;
+    
+    /* Dance type colors (matching the calendar entry colors) */
+    --square-dance-color: #3498db;
+    --round-dance-color: #e74c3c;
+    --special-event-color: #ee9b00; /* Same as accent-color */
 }
 
 *,
@@ -263,7 +268,6 @@ img {
     border-color: var(--light-text);
 }
 
-
 /* --- Content Sections --- */
 .content-section {
     padding: 5rem 0;
@@ -290,6 +294,55 @@ img {
     transform: translateY(0);
 }
 
+/* --- Features Grid (Added for About Section) --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-box {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 66, 142, 0.1);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.feature-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
 /* --- Dance Styles Section --- */
 .dance-styles-container {
     display: grid;
@@ -304,12 +357,38 @@ img {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     text-align: center;
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-top var(--transition-speed) ease, background-color var(--transition-speed) ease;
+    border-top: 4px solid transparent;
+}
+
+/* Updated dance style cards to match calendar entry colors */
+.dance-style-card.square-dance {
+    border-top-color: var(--square-dance-color);
+}
+
+.dance-style-card.square-dance h3 {
+    color: var(--square-dance-color);
+}
+
+.dance-style-card.round-dance {
+    border-top-color: var(--round-dance-color);
+}
+
+.dance-style-card.round-dance h3 {
+    color: var(--round-dance-color);
 }
 
 .dance-style-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dance-style-card.square-dance:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.dance-style-card.round-dance:hover {
+    background-color: rgba(231, 76, 60, 0.05);
 }
 
 /* --- Schedule/Calendar Section --- */
@@ -331,6 +410,14 @@ img {
     align-items: start;
     border-radius: var(--border-radius);
     background-color: #fdfdfd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Added hover effect to calendar entries */
+.calendar-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
 }
 
 .calendar-entry:last-child {
@@ -431,10 +518,93 @@ img {
 
 .site-footer a {
     color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 
 .site-footer a:hover {
     color: var(--accent-color);
+}
+
+/* --- Modal Styles --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--light-text);
+    margin: 10vh auto;
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--dark-text);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-color);
+}
+
+.modal-body {
+    margin-top: 1rem;
+}
+
+.modal h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--light-bg);
+    text-align: left;
+}
+
+.modal h3 {
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.modal p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.modal p:last-child {
+    margin-bottom: 0.5rem;
 }
 
 /* --- Animation Keyframes --- */
@@ -497,14 +667,11 @@ img {
         padding-top: 2rem; /* Standard Padding wiederherstellen */
     }
 
-    .main-content-wrapper {
-       /* Keine speziellen Styles mehr auf Mobile nötig */
-    }
-
     .content-section {
         padding: 3rem 0;
     }
 
+    .features-grid,
     .dance-styles-container,
     .contact-container {
         grid-template-columns: 1fr;
@@ -529,6 +696,19 @@ img {
     .contact-info {
         text-align: center;
     }
+
+    /* Modal responsive styles */
+    .modal-content {
+        width: 95%;
+        margin: 5vh auto;
+        padding: 1.5rem;
+        max-height: 90vh;
+    }
+
+    .close-modal {
+        top: 0.8rem;
+        right: 1.2rem;
+    }
 }
 
 /* Feinabstimmung für sehr kleine Bildschirme */
@@ -537,4 +717,10 @@ img {
     h2 { font-size: 1.6rem; }
     .hero-content p { font-size: 1rem; }
     .calendar-entry { padding: 1rem 0.8rem; }
+    
+    /* Even smaller modal on tiny screens */
+    .modal-content {
+        padding: 1rem;
+        margin: 3vh auto;
+    }
 }
