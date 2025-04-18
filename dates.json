@@ -1,65 +1,83 @@
 [
-    {
-      "datum": "2025-05-15",
-      "uhrzeit": "19:30",
-      "typ": "Clubabend Square Dance",
-      "level": "Mainstream",
-      "caller": "Max Mustermann",
-      "ort": "Gemeindesaal St. Georg, Ulm",
-      "extras": "Gäste herzlich willkommen!"
-    },
-    {
-      "datum": "2025-05-22",
-      "uhrzeit": "19:30",
-      "typ": "Clubabend Round Dance",
-      "level": "Phase II-III",
-      "caller": "Erika Musterfrau (Cuer)",
-      "ort": "Gemeindesaal St. Georg, Ulm",
-      "extras": ""
-    },
-    {
-        "datum": "2025-08-06",
-        "uhrzeit": "19:30",
-        "typ": "Yeah whatever special",
-        "level": "Phase II-III",
-        "caller": "Erika Musterfrau (Cuer)",
-        "ort": "Somewhere over the rainbow",
-        "extras": ""
-    },
-    {
-      "datum": "2025-05-29",
-      "uhrzeit": "19:30",
-      "typ": "Clubabend Square Dance",
-      "level": "Mainstream",
-      "caller": "Gastcaller: John Doe",
-      "ort": "Gemeindesaal St. Georg, Ulm",
-      "extras": "Special Guest Caller!"
-    },
-     {
-      "datum": "2025-06-05",
-      "uhrzeit": "19:30",
-      "typ": "Clubabend Square Dance",
-      "level": "Mainstream",
-      "caller": "Max Mustermann",
-      "ort": "Gemeindesaal St. Georg, Ulm",
-      "extras": ""
-    },
-    {
-      "datum": "2025-06-14",
-      "uhrzeit": "14:00",
-      "typ": "Special Event: Summer Dance",
-      "level": "MS / Plus / Phase II-IV",
-      "caller": "Verschiedene Caller/Cuer",
-      "ort": "Donauhalle Ulm (Beispielort)",
-      "extras": "Mit Kaffee und Kuchen. Anmeldung erforderlich."
-    },
-    {
-        "datum": "2025-05-20",
-        "uhrzeit": "14:00",
-        "typ": "Special Event: Hohohoh",
-        "level": "MS / Plus / Phase II-IV",
-        "caller": "Verschiedene Caller/Cuer",
-        "ort": "Donauhalle Ulm (Beispielort)",
-        "extras": "Mit Kaffee und Kuchen. Anmeldung erforderlich."
-      }
-  ]
+  {
+    "datum": "2025-04-11",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Wolfgang",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-04-25",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Uli",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-05-02",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-05-09",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Birgit",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-05-16",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-05-23",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Uwe",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-06-06",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Birgit",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-06-12",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2025-06-27",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "Basic",
+    "caller": "Uwe",
+    "ort": "",
+    "extras": ""
+  }
+]
