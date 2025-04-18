@@ -1,0 +1,56 @@
+[
+    {
+      "datum": "2025-05-15",
+      "uhrzeit": "19:30",
+      "typ": "Clubabend Square Dance",
+      "level": "Mainstream",
+      "caller": "Max Mustermann",
+      "ort": "Gemeindesaal St. Georg, Ulm",
+      "extras": "Gäste herzlich willkommen!"
+    },
+    {
+      "datum": "2025-05-22",
+      "uhrzeit": "19:30",
+      "typ": "Clubabend Round Dance",
+      "level": "Phase II-III",
+      "caller": "Erika Musterfrau (Cuer)",
+      "ort": "Gemeindesaal St. Georg, Ulm",
+      "extras": ""
+    },
+    {
+      "datum": "2025-05-29",
+      "uhrzeit": "19:30",
+      "typ": "Clubabend Square Dance",
+      "level": "Mainstream",
+      "caller": "Gastcaller: John Doe",
+      "ort": "Gemeindesaal St. Georg, Ulm",
+      "extras": "Special Guest Caller!"
+    },
+     {
+      "datum": "2025-06-05",
+      "uhrzeit": "19:30",
+      "typ": "Clubabend Square Dance",
+      "level": "Mainstream",
+      "caller": "Max Mustermann",
+      "ort": "Gemeindesaal St. Georg, Ulm",
+      "extras": ""
+    },
+    {
+      "datum": "2025-06-14",
+      "uhrzeit": "14:00",
+      "typ": "Special Event: Summer Dance",
+      "level": "MS / Plus / Phase II-IV",
+      "caller": "Verschiedene Caller/Cuer",
+      "ort": "Donauhalle Ulm (Beispielort)",
+      "extras": "Mit Kaffee und Kuchen. Anmeldung erforderlich."
+    },
+    {
+        "datum": "2025-05-20",
+        "uhrzeit": "14:00",
+        "typ": "Special Event: Hohohoh",
+        "level": "MS / Plus / Phase II-IV",
+        "caller": "Verschiedene Caller/Cuer",
+        "ort": "Donauhalle Ulm (Beispielort)",
+        "extras": "Mit Kaffee und Kuchen. Anmeldung erforderlich."
+      }
+  ]
