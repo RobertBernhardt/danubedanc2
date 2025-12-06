@@ -1,6 +1,15 @@
 [
   {
-    "datum": "2025-04-11",
+    "datum": "2026-01-09",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-01-16",
     "uhrzeit": "20:00",
     "typ": "Round Dance",
     "level": "Basic",
@@ -9,7 +18,88 @@
     "extras": ""
   },
   {
-    "datum": "2025-04-25",
+    "datum": "2026-01-23",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-01-30",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Wolfgang",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-02-06",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Uli Kutsche",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-02-13",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Wolfgang",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-02-20",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-02-27",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Wolfgang",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-03-06",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-03-20",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Uwe",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-03-27",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Wolfgang",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-04-10",
     "uhrzeit": "20:00",
     "typ": "Square Dance",
     "level": "MS / PL",
@@ -18,16 +108,7 @@
     "extras": ""
   },
   {
-    "datum": "2025-05-02",
-    "uhrzeit": "20:00",
-    "typ": "Square Dance",
-    "level": "MS / PL",
-    "caller": "Trixi",
-    "ort": "",
-    "extras": ""
-  },
-  {
-    "datum": "2025-05-09",
+    "datum": "2026-04-17",
     "uhrzeit": "20:00",
     "typ": "Round Dance",
     "level": "Basic",
@@ -36,7 +117,7 @@
     "extras": ""
   },
   {
-    "datum": "2025-05-16",
+    "datum": "2026-04-24",
     "uhrzeit": "20:00",
     "typ": "Square Dance",
     "level": "MS / PL",
@@ -45,16 +126,7 @@
     "extras": ""
   },
   {
-    "datum": "2025-05-23",
-    "uhrzeit": "20:00",
-    "typ": "Square Dance",
-    "level": "MS / PL",
-    "caller": "Uwe",
-    "ort": "",
-    "extras": ""
-  },
-  {
-    "datum": "2025-06-06",
+    "datum": "2026-05-08",
     "uhrzeit": "20:00",
     "typ": "Round Dance",
     "level": "Basic",
@@ -63,7 +135,7 @@
     "extras": ""
   },
   {
-    "datum": "2025-06-12",
+    "datum": "2026-05-22",
     "uhrzeit": "20:00",
     "typ": "Square Dance",
     "level": "MS / PL",
@@ -72,11 +144,38 @@
     "extras": ""
   },
   {
-    "datum": "2025-06-27",
+    "datum": "2026-05-29",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Birgit",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-06-05",
     "uhrzeit": "20:00",
     "typ": "Square Dance",
     "level": "MS / PL",
-    "caller": "Uwe",
+    "caller": "Trixi",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-06-19",
+    "uhrzeit": "20:00",
+    "typ": "Round Dance",
+    "level": "Basic",
+    "caller": "Birgit",
+    "ort": "",
+    "extras": ""
+  },
+  {
+    "datum": "2026-06-26",
+    "uhrzeit": "20:00",
+    "typ": "Square Dance",
+    "level": "MS / PL",
+    "caller": "Trixi",
     "ort": "",
     "extras": ""
   }
