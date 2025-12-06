@@ -81,6 +81,14 @@
     "extras": ""
   },
   {
+    "datum": "2026-03-13",
+    "uhrzeit": "19:00", 
+    "typ": "Mitgliederversammlung",
+    "level": "Außergewöhnliches Event",
+    "ort": "",
+    "extras": "Yihaa"
+  },
+  {
     "datum": "2026-03-20",
     "uhrzeit": "20:00",
     "typ": "Square Dance",
