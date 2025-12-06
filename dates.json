@@ -82,11 +82,11 @@
   },
   {
     "datum": "2026-03-13",
-    "uhrzeit": "19:00", 
+    "uhrzeit": "20:00", 
     "typ": "Mitgliederversammlung",
-    "level": "Außergewöhnliches Event",
+    "level": "",
     "ort": "",
-    "extras": "Yihaa"
+    "extras": ""
   },
   {
     "datum": "2026-03-20",
