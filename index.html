@@ -1,353 +1,342 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Danube Dancers Ulm - Square Dance und Round Dance Club in Ulm. Termine, Infos und mehr. Gegründet 1990.">
-    <title>Danube Dancers Ulm | Square & Round Dance seit 1990</title>
-    <link rel="icon" type="image/png" href="/images/logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danube Dancers Ulm</title>
+<meta name="description" content="Danube Dancers Ulm – Square Dance und Round Dance Club in Ulm. Termine, Infos und mehr. Gegründet 1990.">
+<meta name="theme-color" content="#f2fafa">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header class="site-header">
-        <div class="container header-container">
-            <a href="#" class="logo-link"> <img src="/images/logo.png" alt="Danube Dancers Logo" class="logo">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">Über Uns</a></li>
-                    <li><a href="#styles">Tanzarten</a></li>
-                    <li><a href="#schedule">Termine</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="Menü öffnen/schließen">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Danube Dancers Ulm</h1>
-                <p>Dein Club für Square Dance & Round Dance an der Donau!</p>
-                <a href="#schedule" class="cta-button">Aktuelle Termine</a>
-            </div>
-            <div class="hero-overlay"></div>
-        </section>
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <a href="#start" class="brand" aria-label="Danube Dancers – zum Seitenanfang">
+      <img src="images/logo.webp" alt="" width="54" height="41" class="brand-logo">
+      <span class="brand-name">Danube Dancers<small>Ulm · seit 1990</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#tanzarten">Tanzarten</a></li>
+        <li><a href="#termine">Termine</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-        <div class="main-content-wrapper">
+<main id="inhalt">
 
-            <section id="about" class="content-section fade-in">
-                <div class="container">
-                    <div class="features-grid">
-                        <div class="feature-box">
-                            <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M9 18V5l12-2v13"></path>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <circle cx="18" cy="16" r="3"></circle>
-                                </svg>
-                            </div>
-                            <h3>Square & Round Dance</h3>
-                            <p>Wir tanzen regelmäßig Square- und Round-Dance</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                            </div>
-                            <h3>Immer Freitags</h3>
-                            <p>Unser Clubabend findet jeden Freitag statt</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                                    <line x1="6" y1="1" x2="6" y2="4"></line>
-                                    <line x1="10" y1="1" x2="10" y2="4"></line>
-                                    <line x1="14" y1="1" x2="14" y2="4"></line>
-                                </svg>
-                            </div>
-                            <h3>Seit 1990</h3>
-                            <p>Über 35 Jahre Tanzerfahrung</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="styles" class="content-section dance-styles-section fade-in">
-                <div class="dance-styles-bg"></div>
-                <div class="container">
-                    <h2>Unsere Tanzarten</h2>
-                    <div class="dance-styles-container">
-                        <div class="dance-style-card square-dance">
-                            <div class="dance-card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="3" width="7" height="7" rx="1"></rect>
-                                    <rect x="14" y="3" width="7" height="7" rx="1"></rect>
-                                    <rect x="3" y="14" width="7" height="7" rx="1"></rect>
-                                    <rect x="14" y="14" width="7" height="7" rx="1"></rect>
-                                </svg>
-                            </div>
-                            <span class="dance-type-badge">8 Tänzer • 1 Square</span>
-                            <h3>Square Dance</h3>
-                            <p>Der Caller gibt die Figuren vor, acht Tänzer in einem Square führen sie aus. Ein
-                                dynamisches Zusammenspiel, das Koordination und Aufmerksamkeit erfordert – und riesigen
-                                Spaß macht!</p>
-                            <div class="dance-card-decoration"></div>
-                        </div>
-                        <div class="dance-style-card round-dance">
-                            <div class="dance-card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="9"></circle>
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                    <path d="M12 3v4"></path>
-                                    <path d="M12 17v4"></path>
-                                    <path d="M3 12h4"></path>
-                                    <path d="M17 12h4"></path>
-                                </svg>
-                            </div>
-                            <span class="dance-type-badge">Paartanz • Cuer</span>
-                            <h3>Round Dance</h3>
-                            <p>Paartanz nach Ansage (Cuer). Choreographien aus Standard- und Lateintänzen werden zu
-                                bekannter Musik getanzt. Elegant und abwechslungsreich</p>
-                            <div class="dance-card-decoration"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="schedule" class="content-section schedule-section fade-in">
-                <div class="container">
-                    <h2>Unsere nächsten Termine</h2>
-                    <p class="schedule-intro">Hier findest du unsere kommenden Clubabende und Special Events</p>
-
-                    <!-- Filter Controls -->
-                    <div class="schedule-filters">
-                        <div class="filter-group date-filter">
-                            <label class="filter-label">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                Zeitraum
-                            </label>
-                            <div class="date-slider-container">
-                                <div class="dual-range-slider">
-                                    <input type="range" id="date-slider-min" min="0" max="100" value="0"
-                                        class="date-slider date-slider-min">
-                                    <input type="range" id="date-slider-max" min="0" max="100" value="100"
-                                        class="date-slider date-slider-max">
-                                    <div class="slider-track"></div>
-                                    <div class="slider-range" id="slider-range"></div>
-                                </div>
-                                <div class="date-range-labels">
-                                    <span id="date-start-label">Heute</span>
-                                    <span id="date-end-label">Ende</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-group type-filter">
-                            <label class="filter-label">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                                </svg>
-                                Typ
-                            </label>
-                            <div class="type-checkboxes">
-                                <label class="checkbox-label square-checkbox">
-                                    <input type="checkbox" id="filter-square" checked>
-                                    <span class="checkbox-custom"></span>
-                                    Square
-                                </label>
-                                <label class="checkbox-label round-checkbox">
-                                    <input type="checkbox" id="filter-round" checked>
-                                    <span class="checkbox-custom"></span>
-                                    Round
-                                </label>
-                                <label class="checkbox-label other-checkbox">
-                                    <input type="checkbox" id="filter-other" checked>
-                                    <span class="checkbox-custom"></span>
-                                    Sonstige
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-results-info">
-                        <span id="results-count">0</span> Termine gefunden
-                    </div>
-
-                    <div id="calendar-container" class="calendar-grid">
-                        <p>Lade Termine...</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="join" class="content-section cta-section fade-in">
-                <div class="container">
-                    <h2>Lust mitzutanzen?</h2>
-                    <p>Komm einfach vorbei oder melde dich bei uns! Wir freuen uns auf dich.</p>
-                    <a href="mailto:danubedancers@gmail.com" class="cta-button secondary">Kontakt aufnehmen</a>
-                </div>
-            </section>
-
-            <section id="contact" class="content-section alt-bg fade-in">
-                <div class="container">
-                    <h2>Kontakt & Anfahrt</h2>
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <p><strong>Clubabend:</strong><br>
-                                Wöchentlich im Wechsel Square/Round<br>
-                                (Bitte Terminkalender für Details prüfen!)<br>
-                                <strong>Ort:</strong><br>
-                                Saulgauer Straße 3<br>
-                                89079 Ulm-Wiblingen
-                            </p>
-                            <p><strong>Kontakt:</strong><br>
-                                E-Mail: <a href="mailto:danubedancers@gmail.com">danubedancers@gmail.com</a><br>
-                            </p>
-                        </div>
-                        <div class="contact-map">
-                            <p><em>Hier findest du uns:</em></p>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.589418971979!2d9.981739!3d48.35862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b00bc9f1a50c5%3A0x7c5ef3a5932de5b7!2sSaulgauer%20Str.%203%2C%2089079%20Ulm!5e0!3m2!1sde!2sde!4v1713432500000!5m2!1sde!2sde"
-                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Karte von Saulgauer Straße 3, Ulm-Wiblingen"></iframe>
-                        </div>
-                    </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> Danube Dancers Ulm e.V. |
-                <a href="#" id="impressum-link">Impressum</a> |
-                <a href="#" id="datenschutz-link">Datenschutz</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Modal für Impressum -->
-    <div id="impressum-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Impressum</h2>
-            <div class="modal-body">
-                <p>Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.</p>
-                <p>Amtsgericht Memmingen VR 20660</p>
-                <p>Neu-Ulm</p>
-                <p>1. Vorstand: Annett Bernhardt</p>
-                <p>2. Vorstand: Karin Hanekamp</p>
-                <p>Kontakt: <a href="mailto:info@danube-dancers.de">danubedancers@gmail.com</a></p>
-            </div>
-        </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="start" aria-labelledby="hero-title">
+    <div class="hero-scene" id="heroScene" aria-hidden="true">
+      <canvas class="hero-still"></canvas>
+      <canvas class="hero-gl"></canvas>
+      <canvas class="hero-fx"></canvas>
+      <div class="hero-haze"></div>
     </div>
 
-    <!-- Modal für Datenschutz -->
-    <div id="datenschutz-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Datenschutzerklärung</h2>
-            <div class="modal-body">
-                <p>Die Betreiber dieser Seiten (Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.) nehmen den
-                    Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich
-                    und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die
-                    Nutzung unserer Website ist ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten
-                    personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben und verarbeitet
-                    werden, erfolgt dies auf der Rechtsgrundlage: erforderlich zur Vertragserfüllung gem. Art. 6 Abs. 1
-                    b) DSGVO aufgrund einer Einwilligung gem. Art. 6 Abs. 1 a) DSGVO zur Wahrung berechtigter Interessen
-                    gem. Art. 6 Abs. 1 f) DSGVO im Rahmen der Erfüllung des Satzungszwecks und der Mitgliederpflege.
-                    Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Darüber hinaus
-                    ist eine Erhebung, Verarbeitung oder Nutzung der hier veröffentlichten, personenbezogenen Daten
-                    durch Dritte, insbesondere für Zwecke des Adresshandels oder der Werbung, ohne ausdrückliche,
-                    schriftliche Einwilligung des Betroffenen nicht zulässig. Sollten im Rahmen der
-                    Auftragsdatenverarbeitung Daten an Dienstleister weitergegeben werden, so sind diese an die
-                    gesetzlichen Bestimmungen des Datenschutzes (DS-GVO und BDSG-neu) gebunden. Erhebungen
-                    beziehungsweise Übermittlungen persönlicher Daten an staatliche Einrichtungen und Behörden erfolgen
-                    nur im Rahmen zwingender Rechtsvorschriften. Wir weisen darauf hin, dass die Datenübertragung im
-                    Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser
-                    Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
-
-                <h3>Cookies</h3>
-                <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen
-                    Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher,
-                    effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt
-                    werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte
-                    „Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben
-                    auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren
-                    Browser beim nächsten Besuch wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über
-                    das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von
-                    Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies
-                    beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität
-                    dieser Website eingeschränkt sein.</p>
-
-                <h3>Kontakt</h3>
-                <p>Wenn Sie uns per Email Anfragen zukommen lassen, werden Ihre Angaben aus der Email inklusive der von
-                    Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von
-                    Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-
-                <h3>Email-Adressen</h3>
-                <p>Email-Verkehr mit uns über diese Website wird aus Gründen der Geschäftstätigkeit gespeichert (Art. 6
-                    Abs. 1 b) und f) DSGVO). Eine Löschung erfolgt nach Ablauf der gesetzlichen Aufbewahrungsfristen.
-                </p>
-
-                <h3>Recht auf Auskunft, Löschung, Sperrung</h3>
-                <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen
-                    Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf
-                    Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema
-                    personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns
-                    wenden.</p>
-
-                <h3>Webseiten-Statistik</h3>
-                <p>In Verbindung mit dem Zugriff auf unsere Seiten werden serverseitig Daten (zum Beispiel IP-Adresse,
-                    Datum, Uhrzeit und betrachtete Seiten) gespeichert. Es findet keine personenbezogene Verwertung
-                    statt. Die statistische Auswertung anonymisierter Datensätze bleibt vorbehalten.</p>
-
-                <h3>Copyright</h3>
-                <p>Alle Objekte dieser Webseiten sind urheberrechtlich geschützt. Jegliche Vervielfältigung, auch
-                    auszugsweise, bedarf einer Einwilligung des Webseitenbetreibers.</p>
-
-                <p><em>(Stand: 28.05.2024)</em></p>
-            </div>
-        </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Square &amp; Round Dance an der Donau</p>
+      <h1 id="hero-title">Danube Dancers <span>Ulm</span></h1>
+      <p class="hero-lead">Dein Club für Square Dance &amp; Round Dance an der Donau!</p>
+      <div class="hero-actions">
+        <a href="#termine" class="btn btn-primary">Aktuelle Termine</a>
+        <a href="#kontakt" class="btn btn-ghost">Lust mitzutanzen?</a>
+      </div>
+      <a href="#termine" class="next-chip" id="nextChip" hidden>
+        <span class="next-chip-label">Nächster Termin</span>
+        <span class="next-chip-text" id="nextChipText"></span>
+      </a>
     </div>
 
-    <script src="index.js"></script>
+    <svg class="hero-edge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 58 C 160 22 300 20 470 46 S 780 88 960 58 S 1260 12 1440 40 L1440 90 L0 90 Z" class="edge-back"/>
+      <path d="M0 72 C 200 44 360 50 540 66 S 860 86 1040 66 S 1300 44 1440 60 L1440 90 L0 90 Z" class="edge-front"/>
+    </svg>
+  </section>
+
+  <!-- ============ ÜBER UNS ============ -->
+  <section class="section about" id="ueber-uns" aria-label="Über uns">
+    <div class="wrap">
+      <ul class="facts">
+        <li class="fact fact-teal">
+          <span class="fact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </span>
+          <h3>Square &amp; Round Dance</h3>
+          <p>Wir tanzen regelmäßig Square- und Round-Dance</p>
+        </li>
+        <li class="fact fact-coral">
+          <span class="fact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </span>
+          <h3>Immer Freitags</h3>
+          <p>Unser Clubabend findet jeden Freitag statt</p>
+        </li>
+        <li class="fact fact-lime">
+          <span class="fact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </span>
+          <h3>Seit 1990</h3>
+          <p>Über 35 Jahre Tanzerfahrung</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TANZARTEN ============ -->
+  <section class="section styles" id="tanzarten" aria-labelledby="styles-title">
+    <svg class="ribbons" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="rb rb1" d="M-80 560 C 180 420 300 520 520 380 S 860 120 1100 180 S 1400 60 1560 20"/>
+      <path class="rb rb2" d="M-80 640 C 200 520 360 600 600 470 S 900 230 1160 280 S 1420 170 1560 130"/>
+      <path class="rb rb3" d="M-80 700 C 240 610 420 680 660 560 S 980 340 1220 380 S 1440 280 1560 250"/>
+      <path class="rb rb4" d="M-80 470 C 140 330 260 420 470 300 S 800 40 1040 90 S 1380 -20 1560 -60"/>
+    </svg>
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow eyebrow-light">Zwei Tänze, ein Club</p>
+        <h2 id="styles-title">Unsere Tanzarten</h2>
+      </header>
+
+      <div class="dance-cards">
+        <article class="dance-card card-square">
+          <div class="dance-figure" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="square-fig">
+              <rect x="38" y="38" width="124" height="124" rx="10" class="fig-floor"/>
+              <g class="sq-rotor">
+                <g class="couple" transform="translate(100 34)"><circle cx="-11" r="9" class="dot-a"/><circle cx="11" r="9" class="dot-b"/></g>
+                <g class="couple" transform="translate(166 100) rotate(90)"><circle cx="-11" r="9" class="dot-a"/><circle cx="11" r="9" class="dot-b"/></g>
+                <g class="couple" transform="translate(100 166) rotate(180)"><circle cx="-11" r="9" class="dot-a"/><circle cx="11" r="9" class="dot-b"/></g>
+                <g class="couple" transform="translate(34 100) rotate(270)"><circle cx="-11" r="9" class="dot-a"/><circle cx="11" r="9" class="dot-b"/></g>
+              </g>
+              <circle cx="100" cy="100" r="5" class="fig-caller"/>
+            </svg>
+          </div>
+          <div class="dance-body">
+            <span class="badge">8 Tänzer • 1 Square</span>
+            <h3>Square Dance</h3>
+            <p>Der Caller gibt die Figuren vor, acht Tänzer in einem Square führen sie aus. Ein dynamisches Zusammenspiel, das Koordination und Aufmerksamkeit erfordert – und riesigen Spaß macht!</p>
+          </div>
+        </article>
+
+        <article class="dance-card card-round">
+          <div class="dance-figure" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="round-fig">
+              <circle cx="100" cy="100" r="68" class="fig-ring"/>
+              <circle cx="100" cy="100" r="40" class="fig-ring fig-ring-inner"/>
+              <g class="rd-rotor">
+                <g transform="translate(100 32)"><circle cx="-7" r="8" class="dot-a"/><circle cx="7" r="8" class="dot-b"/></g>
+                <g transform="translate(159 134) rotate(120)"><circle cx="-7" r="8" class="dot-a"/><circle cx="7" r="8" class="dot-b"/></g>
+                <g transform="translate(41 134) rotate(240)"><circle cx="-7" r="8" class="dot-a"/><circle cx="7" r="8" class="dot-b"/></g>
+              </g>
+            </svg>
+          </div>
+          <div class="dance-body">
+            <span class="badge">Paartanz • Cuer</span>
+            <h3>Round Dance</h3>
+            <p>Paartanz nach Ansage (Cuer). Choreographien aus Standard- und Lateintänzen werden zu bekannter Musik getanzt. Elegant und abwechslungsreich</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TERMINE ============ -->
+  <section class="section schedule" id="termine" aria-labelledby="schedule-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Clubabende &amp; Specials</p>
+        <h2 id="schedule-title">Unsere nächsten Termine</h2>
+        <p class="section-intro">Hier findest du unsere kommenden Clubabende und Special Events</p>
+      </header>
+
+      <div class="schedule-layout">
+        <aside class="filters" aria-label="Termine filtern">
+          <div class="filter-group">
+            <p class="filter-label" id="range-label">Zeitraum</p>
+            <div class="range" role="group" aria-labelledby="range-label">
+              <div class="range-track"><div class="range-fill" id="rangeFill"></div></div>
+              <input type="range" id="date-slider-min" min="0" max="100" value="0" aria-label="Zeitraum ab">
+              <input type="range" id="date-slider-max" min="0" max="100" value="100" aria-label="Zeitraum bis">
+            </div>
+            <div class="range-values">
+              <span id="date-start-label">Heute</span>
+              <span id="date-end-label">Ende</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <p class="filter-label">Typ</p>
+            <div class="chips">
+              <label class="chip chip-square"><input type="checkbox" id="filter-square" checked><span>Square</span></label>
+              <label class="chip chip-round"><input type="checkbox" id="filter-round" checked><span>Round</span></label>
+              <label class="chip chip-other"><input type="checkbox" id="filter-other" checked><span>Sonstige</span></label>
+            </div>
+          </div>
+
+          <p class="results" aria-live="polite"><strong id="results-count">0</strong> Termine gefunden</p>
+          <button type="button" class="btn btn-cal" id="openCalendar" aria-haspopup="dialog">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Kalender
+          </button>
+        </aside>
+
+        <div class="calendar" id="calendar-container">
+          <p class="calendar-empty">Lade Termine …</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Kontakt &amp; Anfahrt</p>
+        <h2 id="contact-title">Lust mitzutanzen?</h2>
+        <p class="section-intro">Komm einfach vorbei oder melde dich bei uns! Wir freuen uns auf dich.</p>
+      </header>
+
+      <div class="contact-grid">
+        <dl class="contact-list">
+          <div>
+            <dt>Clubabend</dt>
+            <dd>Wöchentlich im Wechsel Square/Round<br><span class="muted">(Bitte Terminkalender für Details prüfen!)</span></dd>
+          </div>
+          <div>
+            <dt>Ort</dt>
+            <dd>Saulgauer Straße 3<br>89079 Ulm-Wiblingen</dd>
+          </div>
+          <div>
+            <dt>Kontakt</dt>
+            <dd>
+              <a href="mailto:danubedancers@gmail.com">danubedancers@gmail.com</a>
+              <button type="button" class="copy-mail" data-copy="danubedancers@gmail.com" aria-label="E-Mail-Adresse kopieren" title="E-Mail-Adresse kopieren"><svg class="ic-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg><svg class="ic-done" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="map-card">
+          <svg class="map-art" viewBox="0 0 480 300" aria-hidden="true">
+            <rect width="480" height="300" class="map-land"/>
+            <path d="M-20 214 C 70 180 120 250 210 222 S 350 150 500 190 L 500 260 C 360 214 300 290 200 276 S 60 236 -20 262 Z" class="map-river"/>
+            <path d="M-20 238 C 80 210 130 268 210 248 S 350 178 500 222" class="map-river-line"/>
+            <path d="M40 40 L 200 120 L 250 60 L 440 110" class="map-road"/>
+            <path d="M120 0 L 170 300" class="map-road map-road-thin"/>
+            <path d="M330 0 L 300 300" class="map-road map-road-thin"/>
+            <g class="map-pin" transform="translate(236 118)">
+              <ellipse cx="0" cy="34" rx="16" ry="5" class="pin-shadow"/>
+              <path d="M0 32 C -8 18 -22 6 -22 -8 A 22 22 0 0 1 22 -8 C 22 6 8 18 0 32 Z" class="pin-body"/>
+              <circle cx="0" cy="-8" r="8" class="pin-dot"/>
+            </g>
+            <text x="30" y="286" class="map-label">Donau</text>
+          </svg>
+          <div class="map-body">
+            <p class="map-address">Saulgauer Straße 3, 89079 Ulm-Wiblingen</p>
+            <a class="btn btn-primary btn-small" href="https://www.google.com/maps/search/?api=1&amp;query=Saulgauer+Stra%C3%9Fe+3%2C+89079+Ulm" target="_blank" rel="noopener">In Google Maps öffnen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="images/logo.webp" alt="Logo des Neu-Ulmer Square- und Round-Dance-Clubs Danube Dancers e.V." width="120" height="90" class="footer-logo" loading="lazy">
+    <p>© <span id="current-year">2026</span> Danube Dancers Ulm e.V.</p>
+    <nav class="footer-links" aria-label="Rechtliches">
+      <button type="button" class="link-btn" data-dialog="impressum">Impressum</button>
+      <button type="button" class="link-btn" data-dialog="datenschutz">Datenschutz</button>
+    </nav>
+  </div>
+</footer>
+
+<!-- ============ KALENDER ============ -->
+<dialog class="legal cal-dialog" id="kalender" aria-labelledby="kalender-title">
+  <div class="legal-head">
+    <h2 id="kalender-title">Kalender</h2>
+    <button type="button" class="legal-close" aria-label="Schließen">&times;</button>
+  </div>
+  <div class="cal-toolbar">
+    <button type="button" class="cal-arrow" id="calPrev" aria-label="Vorheriger Monat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <p class="cal-month" id="calMonth" aria-live="polite"></p>
+    <button type="button" class="cal-arrow" id="calNext" aria-label="Nächster Monat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button type="button" class="cal-today" id="calToday">Heute</button>
+    <ul class="cal-legend" aria-label="Legende">
+      <li class="lg-square">Square</li><li class="lg-round">Round</li><li class="lg-other">Sonstige</li>
+    </ul>
+  </div>
+  <div class="cal-body">
+    <div class="cal-main">
+      <div class="cal-weekdays" aria-hidden="true"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+    <section class="cal-detail" id="calDetail" aria-live="polite"></section>
+  </div>
+</dialog>
+
+<!-- ============ IMPRESSUM ============ -->
+<dialog class="legal" id="impressum" aria-labelledby="impressum-title">
+  <div class="legal-head">
+    <h2 id="impressum-title">Impressum</h2>
+    <button type="button" class="legal-close" aria-label="Schließen">&times;</button>
+  </div>
+  <div class="legal-body">
+    <p>Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.</p>
+    <p>Amtsgericht Memmingen VR 20660</p>
+    <p>Neu-Ulm</p>
+    <p>1. Vorstand: Annett Bernhardt</p>
+    <p>2. Vorstand: Karin Hanekamp</p>
+    <p>Kontakt: <a href="mailto:danubedancers@gmail.com">danubedancers@gmail.com</a></p>
+  </div>
+</dialog>
+
+<!-- ============ DATENSCHUTZ ============ -->
+<dialog class="legal" id="datenschutz" aria-labelledby="datenschutz-title">
+  <div class="legal-head">
+    <h2 id="datenschutz-title">Datenschutzerklärung</h2>
+    <button type="button" class="legal-close" aria-label="Schließen">&times;</button>
+  </div>
+  <div class="legal-body">
+    <p>Die Betreiber dieser Seiten (Neu-Ulmer Square- und Round Dance Club Danube Dancers e.V.) nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung unserer Website ist ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben und verarbeitet werden, erfolgt dies auf der Rechtsgrundlage: erforderlich zur Vertragserfüllung gem. Art. 6 Abs. 1 b) DSGVO aufgrund einer Einwilligung gem. Art. 6 Abs. 1 a) DSGVO zur Wahrung berechtigter Interessen gem. Art. 6 Abs. 1 f) DSGVO im Rahmen der Erfüllung des Satzungszwecks und der Mitgliederpflege. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Darüber hinaus ist eine Erhebung, Verarbeitung oder Nutzung der hier veröffentlichten, personenbezogenen Daten durch Dritte, insbesondere für Zwecke des Adresshandels oder der Werbung, ohne ausdrückliche, schriftliche Einwilligung des Betroffenen nicht zulässig. Sollten im Rahmen der Auftragsdatenverarbeitung Daten an Dienstleister weitergegeben werden, so sind diese an die gesetzlichen Bestimmungen des Datenschutzes (DS-GVO und BDSG-neu) gebunden. Erhebungen beziehungsweise Übermittlungen persönlicher Daten an staatliche Einrichtungen und Behörden erfolgen nur im Rahmen zwingender Rechtsvorschriften. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+    <h3>Cookies</h3>
+    <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
+
+    <h3>Kontakt</h3>
+    <p>Wenn Sie uns per Email Anfragen zukommen lassen, werden Ihre Angaben aus der Email inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+    <h3>Email-Adressen</h3>
+    <p>Email-Verkehr mit uns über diese Website wird aus Gründen der Geschäftstätigkeit gespeichert (Art. 6 Abs. 1 b) und f) DSGVO). Eine Löschung erfolgt nach Ablauf der gesetzlichen Aufbewahrungsfristen.</p>
+
+    <h3>Recht auf Auskunft, Löschung, Sperrung</h3>
+    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+
+    <h3>Webseiten-Statistik</h3>
+    <p>In Verbindung mit dem Zugriff auf unsere Seiten werden serverseitig Daten (zum Beispiel IP-Adresse, Datum, Uhrzeit und betrachtete Seiten) gespeichert. Es findet keine personenbezogene Verwertung statt. Die statistische Auswertung anonymisierter Datensätze bleibt vorbehalten.</p>
+
+    <h3>Copyright</h3>
+    <p>Alle Objekte dieser Webseiten sind urheberrechtlich geschützt. Jegliche Vervielfältigung, auch auszugsweise, bedarf einer Einwilligung des Webseitenbetreibers.</p>
+
+    <p><em>(Stand: 28.05.2024)</em></p>
+  </div>
+</dialog>
+
+<script src="app.js" defer></script>
+<script src="hero-art.js" defer></script>
+<script src="hero.js" defer></script>
 </body>
-
 </html>
